@@ -1,0 +1,16 @@
+<!-- chat.component.html -->
+<div class="chat-container">
+    <!-- Lista de mensagens -->
+    <div class="messages">
+        <div *ngFor="let message of messages" class="message">
+            <!-- Exibe o nome do remetente e o texto da mensagem -->
+            <strong>{{ getUserName(message.senderId) }}:</strong> {{ message.content }}
+        </div>
+    </div>
+
+    <!-- Campo de entrada para novas mensagens -->
+    <div class="message-input">
+        <input #messageBox type="text" placeholder="Digite uma mensagem..." />
+        <button (click)="sendMessage(messageBox.value); messageBox.value=''">Enviar</button>
+    </div>
+</div>

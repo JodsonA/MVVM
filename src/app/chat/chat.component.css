@@ -1,0 +1,52 @@
+/* chat.component.css */
+.chat-window {
+    height: calc(100% - 80px); /* Altura menos a altura da entrada de texto */
+    overflow-y: auto; /* Scroll para mensagens */
+    padding: 40px;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background-color: #DCF8C6; /* Cor das bolhas de mensagem */
+    border-radius: 7px;
+    word-wrap: break-word;
+    float: right; /* Mude para 'left' para o outro usuário */
+    clear: both;
+}
+
+.message strong {
+    display: block; /* Nome do usuário em linha própria */
+    color: #6A6A6A;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.message-input {
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 50px); /* Centraliza baseado na largura do app-container */
+    width: calc(10% - 40px); /* Largura total menos padding */
+    display: flex;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #075E54; /* Cor do logo do WhatsApp */
+    color: white;
+}
+
+button:hover {
+    background-color: #054C44;
+}

@@ -1,0 +1,25 @@
+/* app.component.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5ddd5; /* Cor de fundo semelhante ao WhatsApp */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    color: #075E54; /* Cor do logo do WhatsApp */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-container {
+    width: 600px; /* Largura mais estreita para parecer um chat */
+    height: 850px; /* Altura fixa */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde o overflow */
+}
